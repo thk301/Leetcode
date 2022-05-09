@@ -1,0 +1,15 @@
+```sql
+WITH CTE_A AS (
+SELECT
+Id, 
+Num, 
+LEAD(Num, 1) Over (order by Id asc) as two, 
+LEAD(Num, 2) OVER (order by Id asc) as three
+FROM Logs
+  )
+SELECT
+ Num
+FROM CTE_A
+WHERE Num = two AND Num = three
+
+```
