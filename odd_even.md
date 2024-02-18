@@ -1,3 +1,5 @@
+```
+
 WITH combined as (
 SELECT 
 measurement_value,
@@ -15,3 +17,6 @@ measurement_value else 0 END) as even_sum
 from combined
 group by 1
 order by 1 asc
+
+
+```
