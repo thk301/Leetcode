@@ -1,10 +1,10 @@
 ```
 
-rank() over (partition by )
+rank() over (partition by )  --> 1, 1, 3, 
 
-dense_rank() over (partition by )
+dense_rank() over (partition by )  --> 1, 1, 2 
 
-row_number() over (partition by)
+row_number() over (partition by)  --> 1, 2, 3, 
 
 sum(this) over (partition by  order by )
 
