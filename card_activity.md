@@ -1,3 +1,5 @@
+```
+
 with card_ranked as (
 SELECT 
 card_name,
@@ -15,3 +17,4 @@ issued_amount
 from card_ranked as c
 where ranked=1
 order by 2 desc
+```
